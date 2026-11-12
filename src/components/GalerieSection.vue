@@ -60,7 +60,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', clavier))
         >{{ f.label }}</button>
       </div>
       <div class="gal">
-        <figure v-for="(g, i) in visibles" :key="g.image" @click="ouvrir(i)">
+        <figure v-for="(g, i) in visibles" :key="g.image" tabindex="0" role="button" :aria-label="`Agrandir : ${g.legende}`" @click="ouvrir(i)" @keydown.enter="ouvrir(i)" @keydown.space.prevent="ouvrir(i)">
           <img :src="img(g.image)" :alt="g.legende" loading="lazy">
           <figcaption>{{ g.legende }}</figcaption>
         </figure>

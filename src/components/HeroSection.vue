@@ -1,33 +1,12 @@
 <script setup>
-import { contact, img } from '../data/site.js'
+import { img } from '../data/site.js'
 </script>
-
 <template>
-  <div class="w hero">
-    <div>
-      <span class="lbl">Traiteur à domicile · Région PACA</span>
-      <h1>Le restaurant<br><i>s’invite</i> chez vous.</h1>
-      <p class="sub">
-        Paella géante, pizzas, brasero, buffets et cocktails, cuisinés sur place pour vos mariages,
-        anniversaires et soirées d’entreprise. Tout est fait maison.
-      </p>
-      <div class="ctas">
-        <a class="btn plein" href="#estimation">Estimer mon budget</a>
-        <a class="btn" :href="`tel:${contact.telephoneLien}`">Appeler le {{ contact.telephone }}</a>
-      </div>
-      <div class="proofs">
-        <div><b>100 %</b>recommandé sur Facebook</div>
-        <div><b>Fait maison</b>produits frais</div>
-        <div><b>Gratuit</b>devis personnalisé</div>
-      </div>
-    </div>
-    <figure class="hero-ph deco">
-      <img
-        :src="img('brasero-soiree.webp')"
-        alt="Brasero allumé pendant une soirée en villa, invités en arrière-plan"
-        width="1400" height="1867" fetchpriority="high"
-      >
-      <figcaption>Brasero, soirée en villa</figcaption>
-    </figure>
-  </div>
+  <section class="signature-hero">
+    <img class="signature-background" :src="img('brasero-soiree.webp')" alt="Brasero allumé lors d’une réception privée en soirée" fetchpriority="high" width="1400" height="1867">
+    <div class="signature-shade"></div>
+    <div class="w signature-content"><span class="lbl">CHEF À DOM · BY DYLAN</span><h1>L’art de recevoir.<br>Le plaisir de <i>partager.</i></h1><p>Une cuisine généreuse, préparée chez vous.<br>Des réceptions à votre image, en région PACA.</p><a class="btn plein" href="#contact">Imaginons votre réception <span>↗</span></a></div>
+    <div class="w signature-foot"><span>MARIAGES & RÉCEPTIONS PRIVÉES</span><a href="#formules">Découvrir notre cuisine ↓</a><span>PROVENCE · CÔTE D’AZUR</span></div>
+  </section>
+  <div class="w signature-intro"><span class="lbl">LE GOÛT DES MOMENTS ENSEMBLE</span><h2>Vous profitez de l’instant.<br>Nous nous occupons <i>de la table.</i></h2><p>Une paella cuisinée devant vos invités, un brasero à la nuit tombée, un cocktail pour se retrouver. Dylan et son équipe vous accompagnent, du choix du menu au jour de votre réception.</p></div>
 </template>

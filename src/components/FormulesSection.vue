@@ -8,7 +8,7 @@ import { formules, img } from '../data/site.js'
       <div class="head">
         <div>
           <span class="lbl">Nos formules</span>
-          <h2>Quatre façons<br>de <i>recevoir</i>.</h2>
+          <h2>Une cuisine vivante,<br>des moments <i>à partager.</i></h2>
         </div>
         <p>Chaque formule se combine avec les autres. On adapte les quantités et le menu à votre événement.</p>
       </div>
