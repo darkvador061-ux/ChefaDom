@@ -213,3 +213,16 @@ section{padding:85px 0;border-top:0;scroll-margin-top:90px}.head{margin-bottom:4
 @media(max-width:980px){.hd{height:72px}.nav-mob{background:#f7f5ef!important}.signature-hero{height:calc(90svh - 72px);min-height:580px}.signature-content h1{font-size:7.2vw}.signature-foot span:last-child{display:none}.signature-intro{padding:70px 0 55px}}
 @media(max-width:760px){.signature-hero{min-height:570px;height:calc(88svh - 72px);max-height:760px}.signature-background{object-position:60% center}.signature-shade{background:linear-gradient(90deg,#101a1bd9,#101a1b60),linear-gradient(0deg,#101a1b70,transparent)}.signature-content{padding-bottom:30px}.signature-content h1{font-size:clamp(2.9rem,8.7vw,4.7rem);line-height:1.12;margin:24px 0}.signature-content p{font-size:.87rem}.signature-content .lbl{font-size:.56rem}.signature-foot{bottom:24px;font-size:.48rem;align-items:end}.signature-foot a{font-size:.58rem}.signature-intro{padding:60px 0 45px}.signature-intro h2{font-size:2.4rem}.signature-intro p{font-size:.85rem}section{padding:60px 0}.head{gap:18px;margin-bottom:30px}.head p{max-width:100%;font-size:.85rem}.forms{grid-template-columns:1fr 1fr;gap:28px 18px}.fm:nth-child(even){padding-top:30px}.fm h3{font-size:1.3rem}.fm .px{font-size:.69rem}.fm p{font-size:.79rem}.fm .im{margin-bottom:16px}.est{gap:30px}.gal{columns:2;column-gap:12px}.gal figure{margin-bottom:12px}.gal figcaption{font-size:.65rem}.ct .big{font-size:2.1rem}form.dv{padding:24px}.ct dl div{grid-template-columns:6rem 1fr}.avis blockquote{font-size:1.4rem}}
 @media(max-width:400px){.signature-content h1{font-size:2.65rem}.signature-foot span{max-width:140px;line-height:1.7}.logo b{font-size:1.6rem}.fm h3{font-size:1.15rem}.ext{gap:8px}.ext .stepper button{width:30px}.ext .stepper input{width:40px}.ct dl div{grid-template-columns:4.8rem 1fr;font-size:.72rem}.recap{padding:24px 18px}.signature-intro h2{font-size:2rem}}
+
+/* Correction du menu mobile */
+@media (max-width: 980px) {
+  header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  header .nav-mob {
+    inset: 72px 0 0;
+    height: calc(100dvh - 72px);
+    padding-bottom: 90px;
+  }
+}
